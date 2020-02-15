@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#d32f2f</color>
+    <color name="colorPrimaryDark">#c72c2c</color>
+    <color name="colorAccent">#3C2020</color>
+    <color name="lightblue">#87ceeb</color>
+    <color name="blackblue">#101c2d</color>
+    <color name="sharea"> #da7f68 </color>
+    <color name="shareb">#f8f08d</color>
+    <color name="sharec"></color>
 </resources>

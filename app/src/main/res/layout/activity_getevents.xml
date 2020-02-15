@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Getevents">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <ImageView
+        android:id="@+id/eventPhototest"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bg"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/eventNamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name"
+        android:layout_below="@+id/eventPhototest"
+        android:textColor="@color/blackblue"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Name"
+        android:layout_below="@+id/eventPhototest"
+        android:textColor="@color/blackblue"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints"
+        android:layout_toRightOf="@+id/eventNamelabel"
+        android:layout_marginLeft="90dp"
+        />
+
+    <TextView
+        android:id="@+id/eventPlacelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Place"
+        android:layout_below="@+id/eventNamelabel"
+        android:textColor="@color/blackblue"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/eventPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="PlaceName"
+        android:layout_below="@+id/eventName"
+        android:textColor="@color/blackblue"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints"
+        android:layout_toRightOf="@+id/eventPlacelabel"
+        android:layout_marginLeft="90dp"
+        />
+
+    <TextView
+        android:id="@+id/eventPurposelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Purpose"
+        android:layout_below="@+id/eventPlacelabel"
+        android:textColor="@color/blackblue"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/eventPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Purpose"
+        android:layout_below="@+id/eventPlace"
+        android:textColor="@color/blackblue"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints"
+        android:layout_toRightOf="@+id/eventPurposelabel"
+        android:layout_marginLeft="70dp"
+        />
+
+
+    <TextView
+        android:id="@+id/eventDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Description"
+        android:layout_below="@id/eventPurpose"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/blackblue"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/eventDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Description"
+        android:layout_below="@id/eventPurpose"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/blackblue"
+
+        android:layout_toRightOf="@+id/eventDescriptionLabel"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/eventDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Date"
+        android:layout_below="@id/eventDescriptionLabel"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/blackblue"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/eventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Date"
+        android:layout_below="@id/eventDescription"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/blackblue"
+
+        android:layout_toRightOf="@+id/eventDateLabel"
+        android:layout_marginLeft="100dp"
+        />
+
+
+
+
+</RelativeLayout>
+
+
+

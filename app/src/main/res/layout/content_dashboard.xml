@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.Dashboard"
+    tools:showIn="@layout/app_bar_dashboard">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/getnotice"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/getnotice"
+
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/list"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="207dp"
+        android:layout_below="@+id/getnotice"
+        android:id="@+id/dashlist"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memorize My Events"
+        tools:ignore="MissingConstraints,UnknownId"
+        android:id="@+id/remember"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@+id/dashlist"
+        android:layout_below="@+id/getnotice"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="172dp"
+        android:src="@drawable/map"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="414dp"
+        android:layout_below="@+id/dashlist"
+        android:id="@+id/dashmap"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location View"
+        tools:ignore="MissingConstraints"
+        android:layout_toRightOf="@+id/dashmap"
+        android:layout_marginTop="430dp"
+        android:id="@+id/location"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="482dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:paddingRight="150dp"
+        android:text="LogOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/logout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="611dp"
+        android:layout_below="@+id/dashmap"
+
+        />
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
