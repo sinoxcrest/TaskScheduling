@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sharea"
+    tools:context=".ui.Needtovisit">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/noteimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/notes"
+
+
+            />
+
+
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/noteimage"
+            android:background="@drawable/shape"
+           android:layout_centerHorizontal="true"
+            android:id="@+id/noteeventname"
+            android:hint="Event Name"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            tools:ignore="NotSibling" />
+        <!--<EditText-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_below="@+id/noteeventname"-->
+            <!--android:background="@drawable/shape"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:id="@+id/noteeventplace"-->
+            <!--android:hint="Event Place"-->
+            <!--android:textColorHint="@color/cardview_dark_background"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--tools:ignore="NotSibling" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_below="@+id/noteeventplace"-->
+            <!--android:background="@drawable/shape"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:id="@+id/noteeventdate"-->
+            <!--android:hint="Event Date"-->
+            <!--android:textColorHint="@color/cardview_dark_background"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--tools:ignore="NotSibling" />-->
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/notestore"
+            android:layout_below="@+id/noteeventname"
+            android:layout_marginTop="20dp"
+            android:background="@color/shareb"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Add Note"
+
+
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

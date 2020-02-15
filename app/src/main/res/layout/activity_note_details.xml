@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.NoteDetails">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textFontWeight="bold"
+        android:id="@+id/viewnotes"
+        android:text="Name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textFontWeight="bold"
+        android:id="@+id/viewplace"
+        android:layout_below="@+id/viewnotes"
+        android:text="Place"
+        app:layout_constraintBottom_toBottomOf="@+id/viewnotes"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textFontWeight="bold"
+        android:id="@+id/viewdate"
+        android:text="Date"
+        android:layout_below="@+id/viewplace"
+        app:layout_constraintBottom_toBottomOf="@+id/viewplace"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".ui.Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/signupimage"
+            tools:ignore="MissingConstraints"
+            android:src="@drawable/register"
+
+
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/signupimage"
+            android:background="@drawable/shape"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/name"
+            android:hint="Full Name"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Contact"
+            android:layout_below="@id/name"
+            android:background="@drawable/shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/address"
+
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/address"
+            android:background="@drawable/shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/contact"
+            android:hint="Address"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/contact"
+            android:background="@drawable/shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/username"
+            android:hint="Username"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Email-address"
+            android:layout_below="@id/username"
+            android:background="@drawable/shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/email"
+
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:layout_below="@id/email"
+            android:background="@drawable/shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/cardview_dark_background"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:background="@color/lightblue"
+            android:textSize="30dp"
+            android:textFontWeight="30dp"
+            android:id="@+id/regisbutton"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+</ScrollView>
