@@ -57,8 +57,7 @@ public class Loginpage extends AppCompatActivity implements SensorEventListener 
         login = findViewById(R.id.loginbutton);
         regsitera = findViewById(R.id.movetoregister);
 
-        this.username.setText("test");
-        this.password.setText("test");
+
 
         regsitera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,9 +73,9 @@ public class Loginpage extends AppCompatActivity implements SensorEventListener 
             public void onClick(View v) {
 //                Toast.makeText(Loginpage.this, "I am clicked", Toast.LENGTH_SHORT).show();
 //
-//                   if(username.getText().toString().equals("test") && password.getText().toString().equals("test")){
+//                   if(username.getText().toString().equals("sajak") && password.getText().toString().equals("sajak")){
 //                       startActivity(new Intent(Loginpage.this,Dashboard.class));
-//                   }
+//                  }
 
                 final LoginBLL bll =new LoginBLL(username.getText().toString(), password.getText().toString());
                StrictMod.StrictMode();

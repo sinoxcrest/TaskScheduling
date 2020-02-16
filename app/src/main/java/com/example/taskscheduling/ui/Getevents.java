@@ -86,7 +86,7 @@ public class Getevents extends AppCompatActivity {
                     return;
                 }
 
-                String imgUrl = "http://10.0.2.2:3000/uploads/"+ response.body().getImage();
+                String imgUrl = "http://192.168.43.88:3000/uploads/"+ response.body().getImage();
 
                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                 StrictMode.setThreadPolicy(policy);

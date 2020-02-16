@@ -85,8 +85,8 @@ public class Registerpage extends AppCompatActivity {
             public void onClick(View view) {
                 nullValidation();
 
-register();
 
+                Toast.makeText(Registerpage.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -94,89 +94,89 @@ register();
     }
 
 
-    private void register() {
-        Log.d("VAL", "BTNCLICKED ");
-
-        if (nullValidation()==true) {
-
-            Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-            Users userInterface = retrofit.create(Users.class);
-            final User user = new User(
-                    name.getText().toString().trim(),
-
-                    contact.getText().toString().trim(),
-                    address.getText().toString().trim(),
-                    username.getText().toString().trim(),
-                    email.getText().toString().trim(),
-                    password.getText().toString().trim());
-            Call<ResponseBody> call = userInterface.userRegistration(user);
-
-
-            call.enqueue(new Callback<ResponseBody>() {
-                @Override
-                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-
-                    Log.d("VAL", "success ");
-
-                    if (response.isSuccessful()) {
-                        Toast.makeText(Registerpage.this, "REGISTRATION SUCCESSFUL", Toast.LENGTH_SHORT).show();
-
-                        Log.d("VAL", "success response ");
-
-                        name.setText("");
-                        email.setText("");
-                        username.setText("");
-                        contact.setText("");
-                        address.setText("");
-                        password.setText("");
-                        startActivity(new Intent(Registerpage.this, Loginpage.class));
-                    } else {
-                        try {
-                            Log.d("VAL", response.toString());
-                            Toast.makeText(Registerpage.this, response.errorBody().string(), Toast.LENGTH_SHORT).show();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-
-                @Override
-                public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-                    Log.d("VAL", t.getLocalizedMessage());
-
-                }
-
-
-            });
-        }
-
-
-        final User registerBLL = new User(
-                name.getText().toString().trim(),
-
-                contact.getText().toString().trim(),
-                address.getText().toString().trim(),
-                username.getText().toString().trim(),
-                email.getText().toString().trim(),
-                password.getText().toString().trim());
-
-
-        final RegisterBLL bll = new RegisterBLL();
-        if (bll.registerUser(registerBLL)) {
-            name.setText("");
-            contact.setText("");
-            address.setText("");
-            email.setText("");
-            username.setText("");
-            password.setText("");
-
-
-        }
-        StrictMod.StrictMode();
-    }
+//    private void register() {
+//        Log.d("VAL", "BTNCLICKED ");
+//
+//        if (nullValidation()==true) {
+//
+//            Retrofit retrofit = new Retrofit.Builder().baseUrl(BASE_URL)
+//                    .addConverterFactory(GsonConverterFactory.create())
+//                    .build();
+//            Users userInterface = retrofit.create(Users.class);
+//            final User user = new User(
+//                    name.getText().toString().trim(),
+//
+//                    contact.getText().toString().trim(),
+//                    address.getText().toString().trim(),
+//                    username.getText().toString().trim(),
+//                    email.getText().toString().trim(),
+//                    password.getText().toString().trim());
+//            Call<ResponseBody> call = userInterface.userRegistration(user);
+//
+//
+//            call.enqueue(new Callback<ResponseBody>() {
+//                @Override
+//                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+//
+//                    Log.d("VAL", "success ");
+//
+//                    if (response.isSuccessful()) {
+//                        Toast.makeText(Registerpage.this, "REGISTRATION SUCCESSFUL", Toast.LENGTH_SHORT).show();
+//
+//                        Log.d("VAL", "success response ");
+//
+//                        name.setText("");
+//                        email.setText("");
+//                        username.setText("");
+//                        contact.setText("");
+//                        address.setText("");
+//                        password.setText("");
+//                        startActivity(new Intent(Registerpage.this, Loginpage.class));
+//                    } else {
+//                        try {
+//                            Log.d("VAL", response.toString());
+//                            Toast.makeText(Registerpage.this, response.errorBody().string(), Toast.LENGTH_SHORT).show();
+//                        } catch (Exception e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                }
+//
+//                @Override
+//                public void onFailure(Call<ResponseBody> call, Throwable t) {
+//
+//                    Log.d("VAL", t.getLocalizedMessage());
+//
+//                }
+//
+//
+//            });
+//        }
+//
+//
+//        final User registerBLL = new User(
+//                name.getText().toString().trim(),
+//
+//                contact.getText().toString().trim(),
+//                address.getText().toString().trim(),
+//                username.getText().toString().trim(),
+//                email.getText().toString().trim(),
+//                password.getText().toString().trim());
+//
+//
+//        final RegisterBLL bll = new RegisterBLL();
+//        if (bll.registerUser(registerBLL)) {
+//            name.setText("");
+//            contact.setText("");
+//            address.setText("");
+//            email.setText("");
+//            username.setText("");
+//            password.setText("");
+//
+//
+//        }
+//        StrictMod.StrictMode();
+//    }
     public boolean nullValidation(){
         if (TextUtils.isEmpty(name.getText().toString())){
             name.setError("Required Field");

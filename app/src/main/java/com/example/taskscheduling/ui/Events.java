@@ -22,7 +22,7 @@ import com.example.taskscheduling.Interface.EventInterface;
 public class Events extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    public String BASE_URL = "http://10.0.2.2:3000/";
+    public String BASE_URL = "http://192.168.43.88:3000/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
