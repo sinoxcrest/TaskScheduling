@@ -90,7 +90,8 @@ public class Accsensor extends AppCompatActivity implements SensorEventListener 
         super.onResume();
         // register this class as a listener for the orientation and
         // accelerometer sensors
-
+        sensorManager.registerListener(this,sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
+                SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
