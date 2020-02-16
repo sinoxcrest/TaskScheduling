@@ -112,8 +112,7 @@
             android:text="Register"
             android:background="@color/lightblue"
             android:textSize="30dp"
-            android:textFontWeight="30dp"
-            android:id="@+id/regisbutton"
+
             android:layout_below="@+id/password"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"

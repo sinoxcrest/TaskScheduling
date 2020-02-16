@@ -1,5 +1,6 @@
 package com.example.taskscheduling.ui;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -29,8 +30,8 @@ public class EventPhoto extends AppCompatActivity {
         setContentView(R.layout.activity_event_photo);
 
 
-        imageView = (ImageView) this.findViewById(R.id.imageView1);
-        Button btnCapture = (Button) this.findViewById(R.id.button1);
+        imageView = this.findViewById(R.id.imageView1);
+        Button btnCapture = this.findViewById(R.id.button1);
 
 
         btnCapture.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +44,8 @@ public class EventPhoto extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == Image_Capture_Code) {
             if (resultCode == RESULT_OK) {
                 Bitmap bp = (Bitmap) data.getExtras().get("data");
@@ -54,4 +56,3 @@ public class EventPhoto extends AppCompatActivity {
         }
     }
 }
-

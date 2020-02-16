@@ -5,32 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.EventPhoto">
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:ignore="MissingConstraints">
-
-    <Button
-        android:id="@+id/button1"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
-        android:text="Take a Photo" >
-    </Button>
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="100dp"
-        android:layout_below="@+id/button1"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="195dp"
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:text="Take a Photo" >
+        </Button>
 
-        android:src="@drawable/noimage"></ImageView>
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/button1"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="195dp"
 
-</RelativeLayout>
+            android:src="@drawable/noimage"></ImageView>
+
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

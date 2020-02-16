@@ -62,7 +62,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@color/lightblue"
                 android:text="Login"
-                android:textFontWeight="30dp"
+
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
@@ -75,7 +75,7 @@
                 android:layout_marginTop="30dp"
                 android:background="@color/lightblue"
                 android:text="Login"
-                android:textFontWeight="30dp"
+
                 android:textSize="30dp"
                 android:textStyle="bold" />
         </ScrollView>

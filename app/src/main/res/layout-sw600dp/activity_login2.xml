@@ -55,7 +55,7 @@
     android:layout_height="60dp"
     android:text="Login"
    android:background="@color/lightblue"
-    android:textFontWeight="30dp"
+
     android:textSize="30dp"
     android:id="@+id/loginbutton"
     android:layout_below="@+id/txtpassword"

@@ -105,7 +105,7 @@
             android:text="Request"
             android:background="@color/lightblue"
             android:textSize="30dp"
-            android:textFontWeight="30dp"
+
             android:id="@+id/requestbutton"
             android:layout_below="@+id/imgProfile"
            android:layout_centerHorizontal="true"

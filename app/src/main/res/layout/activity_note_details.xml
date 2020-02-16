@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
-        android:textFontWeight="bold"
+
         android:id="@+id/viewnotes"
         android:text="Name"
         tools:ignore="MissingConstraints" />
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
-        android:textFontWeight="bold"
+
         android:id="@+id/viewplace"
         android:layout_below="@+id/viewnotes"
         android:text="Place"
@@ -32,7 +32,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
-        android:textFontWeight="bold"
         android:id="@+id/viewdate"
         android:text="Date"
         android:layout_below="@+id/viewplace"
