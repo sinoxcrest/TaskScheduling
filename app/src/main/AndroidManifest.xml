@@ -25,7 +25,6 @@
         android:name="android.hardware.camera.autofocus"
         android:required="false" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -68,7 +67,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAA_51AI-k5jC7cwFkvVLhKEKP2aKydnWU" />
+            android:value="@string/google_maps_key" />
 
         <activity
             android:name=".ui.MapsActivity2"
