@@ -35,7 +35,7 @@ public class Loginpage extends AppCompatActivity implements SensorEventListener 
 
 
 
-    public  String BASE_URL = "http://10.0.2.2:3000/";
+  //  public  String BASE_URL = "http://10.0.2.2:3000/";
 
 
     Vibrator vb;
@@ -57,6 +57,8 @@ public class Loginpage extends AppCompatActivity implements SensorEventListener 
         login = findViewById(R.id.loginbutton);
         regsitera = findViewById(R.id.movetoregister);
 
+        this.username.setText("test");
+        this.password.setText("test");
 
         regsitera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,11 +72,14 @@ public class Loginpage extends AppCompatActivity implements SensorEventListener 
 
             @Override
             public void onClick(View v) {
-
-
+//                Toast.makeText(Loginpage.this, "I am clicked", Toast.LENGTH_SHORT).show();
+//
+//                   if(username.getText().toString().equals("test") && password.getText().toString().equals("test")){
+//                       startActivity(new Intent(Loginpage.this,Dashboard.class));
+//                   }
 
                 final LoginBLL bll =new LoginBLL(username.getText().toString(), password.getText().toString());
-                StrictMod.StrictMode();
+               StrictMod.StrictMode();
                 if (bll.checkUser()) {
                     vb = (Vibrator) getSystemService(VIBRATOR_SERVICE);
 

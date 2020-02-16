@@ -5,9 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+
     android:orientation="vertical"
-    tools:context=".ui.Register">
+    tools:context=".ui.Registerpage">
 
     <RelativeLayout
         android:layout_width="match_parent"

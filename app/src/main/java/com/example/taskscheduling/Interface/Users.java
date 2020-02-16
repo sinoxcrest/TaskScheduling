@@ -10,8 +10,9 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
-public interface Users {//    @POST("clients/register")
-//    Call<ResponseBody> userRegistration(@Body User user);
+public interface Users {
+    @POST("clients/register")
+    Call<ResponseBody> userRegistration(@Body User user);
 
     @POST("clients/login")
     Call<ResponseBody> userLogin(@Body User user);
